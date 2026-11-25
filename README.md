@@ -492,7 +492,7 @@ Exact versions are pinned in `requirements.txt`.
 - **Internship:** CodeAlpha Data Science Internship
 - **Task:** Task 2
 - **Author:** PALAGANI DATTU NAGA VENKATA ARAVIND
-- **GitHub Repository:** [ADD AFTER REPOSITORY CREATION]
+- **GitHub Repository:** https://github.com/aravindpalagani/CodeAlpha_Unemployment_Analysis
 
 Prepared as **CodeAlpha Data Science Internship — Task 2: Unemployment Analysis with
 Python**. The repository is self-contained: raw data, code, outputs, notebook, and report
