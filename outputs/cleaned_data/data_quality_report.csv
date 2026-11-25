@@ -1,0 +1,16 @@
+dataset,check,status,detail
+Dataset 1,No duplicate region-date-area keys,PASS,0 duplicate keys
+Dataset 2,No duplicate region-date keys,PASS,0 duplicate keys
+Dataset 1,No missing critical values,PASS,0 missing critical cells
+Dataset 2,No missing critical values,PASS,0 missing critical cells
+Dataset 1,Unemployment rate within 0-100,PASS,range 0.00-76.74
+Dataset 2,Unemployment rate within 0-100,PASS,range 0.50-75.85
+Dataset 1,Labour participation rate within 0-100,PASS,range 13.33-72.57
+Dataset 2,Labour participation rate within 0-100,PASS,range 16.77-69.69
+Both,Derived labour force is positive,PASS,all derived labour-force estimates > 0
+Dataset 1,Dates parsed,PASS,2019-05-31 to 2020-06-30
+Dataset 2,Dates parsed,PASS,2020-01-31 to 2020-10-31
+Dataset 1,No completely empty rows remain,PASS,740 rows retained
+Dataset 2,No completely empty rows remain,PASS,267 rows retained
+Dataset 1,Missing unit-months left unimputed,PASS,44 region-area-month combinations are absent; they are not fabricated
+Dataset 2,Missing region-months left unimputed,PASS,3 region-month combinations are absent; they are not fabricated

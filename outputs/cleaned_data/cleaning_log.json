@@ -1,0 +1,267 @@
+{
+  "dataset1": {
+    "dataset": "Unemployment in India (primary dataset)",
+    "raw_shape": [
+      768,
+      7
+    ],
+    "raw_columns": [
+      "'Region'",
+      "' Date'",
+      "' Frequency'",
+      "' Estimated Unemployment Rate (%)'",
+      "' Estimated Employed'",
+      "' Estimated Labour Participation Rate (%)'",
+      "'Area'"
+    ],
+    "column_names_standardised": 5,
+    "completely_blank_rows_removed": 28,
+    "text_cells_cleaned": 1099,
+    "duplicate_rows_including_blank": 27,
+    "duplicate_rows_after_blank_drop": 0,
+    "duplicate_rows_removed": 0,
+    "renamed_columns": {
+      "Region": "region",
+      "Date": "date_raw",
+      "Frequency": "frequency",
+      "Estimated Unemployment Rate (%)": "unemployment_rate",
+      "Estimated Employed": "estimated_employed",
+      "Estimated Labour Participation Rate (%)": "labour_participation_rate",
+      "Area": "area"
+    },
+    "invalid_dates": 0,
+    "numeric_columns_coerced": [],
+    "rows_with_missing_critical_values_removed": 0,
+    "remaining_missing_cells": 0,
+    "invalid_rate_outside_0_100": 0,
+    "invalid_lpr_outside_0_100": 0,
+    "invalid_nonpositive_employment": 0,
+    "zero_unemployment_rows_preserved": 11,
+    "low_lpr_below_20_rows": 2,
+    "numerical_ranges": {
+      "unemployment_rate": [
+        0.0,
+        76.74
+      ],
+      "estimated_employed": [
+        49420.0,
+        45777509.0
+      ],
+      "labour_participation_rate": [
+        13.33,
+        72.57
+      ]
+    },
+    "cleaned_shape": [
+      740,
+      16
+    ],
+    "date_range": [
+      "2019-05-31",
+      "2020-06-30"
+    ],
+    "regions": 28,
+    "frequency_values": [
+      "Monthly"
+    ],
+    "area_values": [
+      "Rural",
+      "Urban"
+    ],
+    "missing_value_policy": "No missing values were imputed. Completely empty rows were removed; states with unreported region-months remain absent from those months. Definitional zero unemployment values were retained and flagged.",
+    "expected_region_area_months": 784,
+    "observed_region_area_months": 740,
+    "missing_region_area_months": 44,
+    "regions_with_incomplete_month_coverage": {
+      "Assam": 26,
+      "Chandigarh": 12,
+      "Goa": 24,
+      "Jammu & Kashmir": 21,
+      "Meghalaya": 27,
+      "Puducherry": 26,
+      "Sikkim": 17,
+      "Uttarakhand": 27
+    }
+  },
+  "dataset2": {
+    "dataset": "Unemployment Rate up to 11/2020 (supplementary dataset)",
+    "raw_shape": [
+      267,
+      9
+    ],
+    "raw_columns": [
+      "'Region'",
+      "' Date'",
+      "' Frequency'",
+      "' Estimated Unemployment Rate (%)'",
+      "' Estimated Employed'",
+      "' Estimated Labour Participation Rate (%)'",
+      "'Region.1'",
+      "'longitude'",
+      "'latitude'"
+    ],
+    "column_names_standardised": 5,
+    "completely_blank_rows_removed": 0,
+    "text_cells_cleaned": 534,
+    "duplicate_rows_including_blank": 0,
+    "duplicate_rows_after_blank_drop": 0,
+    "duplicate_rows_removed": 0,
+    "renamed_columns": {
+      "Region": "region",
+      "Date": "date_raw",
+      "Frequency": "frequency",
+      "Estimated Unemployment Rate (%)": "unemployment_rate",
+      "Estimated Employed": "estimated_employed",
+      "Estimated Labour Participation Rate (%)": "labour_participation_rate",
+      "Region.1": "zone",
+      "longitude": "longitude",
+      "latitude": "latitude"
+    },
+    "invalid_dates": 0,
+    "numeric_columns_coerced": [],
+    "rows_with_missing_critical_values_removed": 0,
+    "remaining_missing_cells": 0,
+    "invalid_rate_outside_0_100": 0,
+    "invalid_lpr_outside_0_100": 0,
+    "invalid_nonpositive_employment": 0,
+    "zero_unemployment_rows_preserved": 0,
+    "low_lpr_below_20_rows": 2,
+    "numerical_ranges": {
+      "unemployment_rate": [
+        0.5,
+        75.85
+      ],
+      "estimated_employed": [
+        117542.0,
+        59433759.0
+      ],
+      "labour_participation_rate": [
+        16.77,
+        69.69
+      ]
+    },
+    "cleaned_shape": [
+      267,
+      18
+    ],
+    "date_range": [
+      "2020-01-31",
+      "2020-10-31"
+    ],
+    "regions": 27,
+    "frequency_values": [
+      "Monthly"
+    ],
+    "missing_value_policy": "No missing values were imputed. Completely empty rows were removed; states with unreported region-months remain absent from those months. Definitional zero unemployment values were retained and flagged.",
+    "expected_region_months": 270,
+    "observed_region_months": 267,
+    "missing_region_months": 3,
+    "missing_region_months_detail": [
+      {
+        "region": "Jammu & Kashmir",
+        "month": "2020-04"
+      },
+      {
+        "region": "Sikkim",
+        "month": "2020-01"
+      },
+      {
+        "region": "Sikkim",
+        "month": "2020-02"
+      }
+    ]
+  },
+  "quality_checks": [
+    {
+      "dataset": "Dataset 1",
+      "check": "No duplicate region-date-area keys",
+      "status": "PASS",
+      "detail": "0 duplicate keys"
+    },
+    {
+      "dataset": "Dataset 2",
+      "check": "No duplicate region-date keys",
+      "status": "PASS",
+      "detail": "0 duplicate keys"
+    },
+    {
+      "dataset": "Dataset 1",
+      "check": "No missing critical values",
+      "status": "PASS",
+      "detail": "0 missing critical cells"
+    },
+    {
+      "dataset": "Dataset 2",
+      "check": "No missing critical values",
+      "status": "PASS",
+      "detail": "0 missing critical cells"
+    },
+    {
+      "dataset": "Dataset 1",
+      "check": "Unemployment rate within 0-100",
+      "status": "PASS",
+      "detail": "range 0.00-76.74"
+    },
+    {
+      "dataset": "Dataset 2",
+      "check": "Unemployment rate within 0-100",
+      "status": "PASS",
+      "detail": "range 0.50-75.85"
+    },
+    {
+      "dataset": "Dataset 1",
+      "check": "Labour participation rate within 0-100",
+      "status": "PASS",
+      "detail": "range 13.33-72.57"
+    },
+    {
+      "dataset": "Dataset 2",
+      "check": "Labour participation rate within 0-100",
+      "status": "PASS",
+      "detail": "range 16.77-69.69"
+    },
+    {
+      "dataset": "Both",
+      "check": "Derived labour force is positive",
+      "status": "PASS",
+      "detail": "all derived labour-force estimates > 0"
+    },
+    {
+      "dataset": "Dataset 1",
+      "check": "Dates parsed",
+      "status": "PASS",
+      "detail": "2019-05-31 to 2020-06-30"
+    },
+    {
+      "dataset": "Dataset 2",
+      "check": "Dates parsed",
+      "status": "PASS",
+      "detail": "2020-01-31 to 2020-10-31"
+    },
+    {
+      "dataset": "Dataset 1",
+      "check": "No completely empty rows remain",
+      "status": "PASS",
+      "detail": "740 rows retained"
+    },
+    {
+      "dataset": "Dataset 2",
+      "check": "No completely empty rows remain",
+      "status": "PASS",
+      "detail": "267 rows retained"
+    },
+    {
+      "dataset": "Dataset 1",
+      "check": "Missing unit-months left unimputed",
+      "status": "PASS",
+      "detail": "44 region-area-month combinations are absent; they are not fabricated"
+    },
+    {
+      "dataset": "Dataset 2",
+      "check": "Missing region-months left unimputed",
+      "status": "PASS",
+      "detail": "3 region-month combinations are absent; they are not fabricated"
+    }
+  ],
+  "not_merged_reason": "Dataset 1 has Rural/Urban rows and 28 regions including Chandigarh; Dataset 2 has one overall row per region, 27 regions, geographic zones, and a longer 2020 window. They are related views, not duplicate records. They are analysed separately and compared only where definitions overlap."
+}

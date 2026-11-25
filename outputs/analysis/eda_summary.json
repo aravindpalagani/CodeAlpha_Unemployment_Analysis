@@ -1,0 +1,317 @@
+{
+  "dataset1_overall": {
+    "observations": 740,
+    "regions": 28,
+    "areas": [
+      "Rural",
+      "Urban"
+    ],
+    "months": 14,
+    "date_range": [
+      "2019-05-31",
+      "2020-06-30"
+    ],
+    "weighted_rate": 9.937015540404845,
+    "unweighted_mean": 11.787945945945946,
+    "median": 8.35,
+    "std": 10.721298373157788,
+    "min": 0.0,
+    "max": 76.74,
+    "p25": 4.657500000000001,
+    "p75": 15.887500000000001,
+    "zero_unemployment_observations": 11,
+    "peak_month": {
+      "month": "2020-04",
+      "weighted_rate": 24.15531509661082,
+      "unweighted_rate": 23.641568627450987,
+      "n_obs": 51
+    },
+    "estimated_employed_mean_per_observation": 7204460.025675676,
+    "average_lpr": 42.63012162162162
+  },
+  "dataset2_overview": {
+    "rows": 267,
+    "regions": 27,
+    "months": 10,
+    "date_range": [
+      "2020-01-31",
+      "2020-10-31"
+    ],
+    "zones": [
+      "East",
+      "North",
+      "Northeast",
+      "South",
+      "West"
+    ]
+  },
+  "area_summary": [
+    {
+      "area": "Urban",
+      "n_obs": 381,
+      "n_regions": 28,
+      "months": 14,
+      "unweighted_rate": 13.1666,
+      "weighted_rate": 11.1767,
+      "median_rate": 9.97,
+      "min_rate": 0.0,
+      "max_rate": 76.74,
+      "avg_lpr": 40.9014,
+      "avg_employed": 4388625.5801,
+      "total_employed": 1672066346.0
+    },
+    {
+      "area": "Rural",
+      "n_obs": 359,
+      "n_regions": 27,
+      "months": 14,
+      "unweighted_rate": 10.3248,
+      "weighted_rate": 9.359,
+      "median_rate": 6.76,
+      "min_rate": 0.0,
+      "max_rate": 74.51,
+      "avg_lpr": 44.4648,
+      "avg_employed": 10192852.571,
+      "total_employed": 3659234073.0
+    }
+  ],
+  "top_bottom_states": {
+    "highest": [
+      {
+        "region": "Tripura",
+        "weighted_rate": 28.037241395641104,
+        "mean_rate": 28.350357142857142,
+        "n_obs": 28,
+        "months_observed": 14
+      },
+      {
+        "region": "Haryana",
+        "weighted_rate": 26.04001599083376,
+        "mean_rate": 26.283214285714283,
+        "n_obs": 28,
+        "months_observed": 14
+      },
+      {
+        "region": "Jharkhand",
+        "weighted_rate": 17.73709220427944,
+        "mean_rate": 20.585,
+        "n_obs": 28,
+        "months_observed": 14
+      },
+      {
+        "region": "Bihar",
+        "weighted_rate": 17.33850150930911,
+        "mean_rate": 18.91821428571429,
+        "n_obs": 28,
+        "months_observed": 14
+      },
+      {
+        "region": "Delhi",
+        "weighted_rate": 17.053751874055685,
+        "mean_rate": 16.49535714285714,
+        "n_obs": 28,
+        "months_observed": 14
+      }
+    ],
+    "lowest": [
+      {
+        "region": "Meghalaya",
+        "weighted_rate": 3.1691263413952857,
+        "mean_rate": 4.7988888888888885,
+        "n_obs": 27,
+        "months_observed": 14
+      },
+      {
+        "region": "Assam",
+        "weighted_rate": 5.200957156474619,
+        "mean_rate": 6.428076923076923,
+        "n_obs": 26,
+        "months_observed": 14
+      },
+      {
+        "region": "Odisha",
+        "weighted_rate": 5.750672890127076,
+        "mean_rate": 5.657857142857142,
+        "n_obs": 28,
+        "months_observed": 14
+      },
+      {
+        "region": "Uttarakhand",
+        "weighted_rate": 5.858221981803257,
+        "mean_rate": 6.582962962962963,
+        "n_obs": 27,
+        "months_observed": 14
+      },
+      {
+        "region": "Andhra Pradesh",
+        "weighted_rate": 6.286901896634639,
+        "mean_rate": 7.477142857142857,
+        "n_obs": 28,
+        "months_observed": 14
+      }
+    ]
+  },
+  "coverage": {
+    "dataset1": {
+      "rows": 740,
+      "regions": 28,
+      "months": 14,
+      "area_units": 2,
+      "expected_region_area_months": 784,
+      "missing_region_area_months": 44,
+      "complete_coverage_states": 20,
+      "complete_state_names": [
+        "Andhra Pradesh",
+        "Bihar",
+        "Chhattisgarh",
+        "Delhi",
+        "Gujarat",
+        "Haryana",
+        "Himachal Pradesh",
+        "Jharkhand",
+        "Karnataka",
+        "Kerala",
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Odisha",
+        "Punjab",
+        "Rajasthan",
+        "Tamil Nadu",
+        "Telangana",
+        "Tripura",
+        "Uttar Pradesh",
+        "West Bengal"
+      ],
+      "incomplete_coverage_states": [
+        "Assam",
+        "Chandigarh",
+        "Goa",
+        "Jammu & Kashmir",
+        "Meghalaya",
+        "Puducherry",
+        "Sikkim",
+        "Uttarakhand"
+      ]
+    },
+    "dataset2": {
+      "rows": 267,
+      "regions": 27,
+      "months": 10,
+      "date_range": [
+        "2020-01-31",
+        "2020-10-31"
+      ],
+      "zones": [
+        "East",
+        "North",
+        "Northeast",
+        "South",
+        "West"
+      ]
+    },
+    "balanced_panel_check": {
+      "max_abs_weighted_difference_pp": 0.8159743520244547,
+      "mean_abs_weighted_difference_pp": 0.12174613015053813,
+      "interpretation": "Recomputing the monthly trend on only the 20 states with all 14 months and both areas produces nearly identical weighted rates. The national trend is therefore not an artefact of changing state coverage."
+    }
+  },
+  "relationships": {
+    "pearson": {
+      "unemployment_rate": {
+        "unemployment_rate": 1.0,
+        "estimated_employed": -0.2229,
+        "labour_participation_rate": 0.0026
+      },
+      "estimated_employed": {
+        "unemployment_rate": -0.2229,
+        "estimated_employed": 1.0,
+        "labour_participation_rate": 0.0113
+      },
+      "labour_participation_rate": {
+        "unemployment_rate": 0.0026,
+        "estimated_employed": 0.0113,
+        "labour_participation_rate": 1.0
+      }
+    },
+    "spearman": {
+      "unemployment_rate": {
+        "unemployment_rate": 1.0,
+        "estimated_employed": -0.2166,
+        "labour_participation_rate": -0.0236
+      },
+      "estimated_employed": {
+        "unemployment_rate": -0.2166,
+        "estimated_employed": 1.0,
+        "labour_participation_rate": 0.0494
+      },
+      "labour_participation_rate": {
+        "unemployment_rate": -0.0236,
+        "estimated_employed": 0.0494,
+        "labour_participation_rate": 1.0
+      }
+    },
+    "state_average_unemployment_vs_lpr_pearson": 0.1785240832551443,
+    "monthly_unweighted_unemployment_vs_reported_employment_pearson": -0.9725061685322421,
+    "interpretation": "Pooled correlations are weak because state size and repeated observations dominate the cross-section. The monthly national association between unemployment and total reported employment is strongly negative, but both series are mechanically linked to the labour force and neither establishes causality."
+  },
+  "outliers": {
+    "q1": 4.657500000000001,
+    "q3": 15.887500000000001,
+    "iqr": 11.23,
+    "lower_fence": 0.0,
+    "upper_fence": 32.7325,
+    "outlier_count": 35,
+    "outlier_share_pct": 4.72972972972973,
+    "high_outlier_count": 35,
+    "low_outlier_count": 0,
+    "treatment": "Retained. These are plausible extreme labour-market observations, especially during April-May 2020; removing them would understate the shock."
+  },
+  "seasonality": {
+    "assessment": "insufficient_evidence",
+    "years_covered": [
+      2019,
+      2020
+    ],
+    "months_covered": 14,
+    "calendar_months_observed_in_both_years": [
+      5,
+      6
+    ],
+    "note": "The primary dataset spans only 14 consecutive months (May 2019-June 2020). Only May and June appear in both years, and the 2020 repeats coincide with the COVID-19 shock. A reliable seasonal cycle normally requires multiple complete years. No seasonal effect is claimed. The supplementary dataset covers a single calendar year (Jan-Oct 2020).",
+    "repeated_month_values": [
+      {
+        "month_number": 5,
+        "month_name": "May",
+        "year": 2019,
+        "unemployment_rate": 8.87
+      },
+      {
+        "month_number": 5,
+        "month_name": "May",
+        "year": 2020,
+        "unemployment_rate": 24.88
+      },
+      {
+        "month_number": 6,
+        "month_name": "Jun",
+        "year": 2019,
+        "unemployment_rate": 9.3
+      },
+      {
+        "month_number": 6,
+        "month_name": "Jun",
+        "year": 2020,
+        "unemployment_rate": 11.9
+      }
+    ]
+  },
+  "method_notes": {
+    "weighted_rate": "Labour-force weighted: sum(estimated unemployed) / sum(estimated labour force) x 100, with labour force derived from employed/(1-rate/100).",
+    "unweighted_mean": "Simple mean of all available region-area-month unemployment rates; each reporting unit has equal weight.",
+    "period_definitions": {
+      "Pre-COVID": "Observations before 2020-03-01",
+      "Transition": "March 2020 (lockdown began 25 March)",
+      "COVID period": "April 2020 onward"
+    }
+  }
+}

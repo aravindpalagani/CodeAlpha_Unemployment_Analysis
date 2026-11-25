@@ -1,0 +1,12 @@
+region,date,area,unemployment_rate,estimated_employed,labour_participation_rate
+Assam,2020-06-30,Rural,0.0,7544937.0,34.38
+Chhattisgarh,2020-04-30,Rural,0.0,6534321.0,39.43
+Goa,2020-02-29,Rural,0.0,171672.0,36.11
+Puducherry,2019-05-31,Rural,0.0,172474.0,43.08
+Puducherry,2019-06-30,Rural,0.0,184527.0,45.95
+Puducherry,2019-07-31,Rural,0.0,139227.0,34.56
+Puducherry,2019-09-30,Rural,0.0,175718.0,43.34
+Puducherry,2019-11-30,Rural,0.0,142787.0,35.0
+Puducherry,2019-06-30,Urban,0.0,304369.0,37.73
+Puducherry,2019-07-31,Urban,0.0,281117.0,34.77
+Sikkim,2020-04-30,Rural,0.0,133399.0,37.72

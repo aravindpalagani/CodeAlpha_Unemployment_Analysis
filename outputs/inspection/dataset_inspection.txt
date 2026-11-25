@@ -1,0 +1,221 @@
+============================================================================================
+DATASET 1: Unemployment in India.csv (primary)
+============================================================================================
+Shape: 768 rows x 7 columns
+Column names as stored in the CSV (repr highlights whitespace):
+  - 'Region'
+  - ' Date'
+  - ' Frequency'
+  - ' Estimated Unemployment Rate (%)'
+  - ' Estimated Employed'
+  - ' Estimated Labour Participation Rate (%)'
+  - 'Area'
+
+Data types:
+Region                                         str
+Date                                           str
+Frequency                                      str
+Estimated Unemployment Rate (%)            float64
+Estimated Employed                         float64
+Estimated Labour Participation Rate (%)    float64
+Area                                           str
+
+First five rows (headers normalised for display):
+        Region        Date Frequency  Estimated Unemployment Rate (%)  Estimated Employed  Estimated Labour Participation Rate (%)  Area
+Andhra Pradesh  31-05-2019   Monthly                             3.65          11999139.0                                    43.24 Rural
+Andhra Pradesh  30-06-2019   Monthly                             3.05          11755881.0                                    42.05 Rural
+Andhra Pradesh  31-07-2019   Monthly                             3.75          12086707.0                                    43.50 Rural
+Andhra Pradesh  31-08-2019   Monthly                             3.32          12285693.0                                    43.97 Rural
+Andhra Pradesh  30-09-2019   Monthly                             5.17          12256762.0                                    44.68 Rural
+
+Last five rows:
+Region Date Frequency  Estimated Unemployment Rate (%)  Estimated Employed  Estimated Labour Participation Rate (%) Area
+   NaN  NaN       NaN                              NaN                 NaN                                      NaN  NaN
+   NaN  NaN       NaN                              NaN                 NaN                                      NaN  NaN
+   NaN  NaN       NaN                              NaN                 NaN                                      NaN  NaN
+   NaN  NaN       NaN                              NaN                 NaN                                      NaN  NaN
+   NaN  NaN       NaN                              NaN                 NaN                                      NaN  NaN
+
+Missing values by column:
+                                         missing_count  missing_percent
+Region                                              28             3.65
+Date                                                28             3.65
+Frequency                                           28             3.65
+Estimated Unemployment Rate (%)                     28             3.65
+Estimated Employed                                  28             3.65
+Estimated Labour Participation Rate (%)             28             3.65
+Area                                                28             3.65
+Rows that are completely empty: 28
+Exact duplicate rows (including empty rows): 27
+Exact duplicate rows after removing completely empty rows: 0
+
+Statistical summary of numeric columns:
+                                         count        mean         std       min         25%         50%          75%          max
+Estimated Unemployment Rate (%)          740.0       11.79       10.72      0.00        4.66        8.35        15.89        76.74
+Estimated Employed                       740.0  7204460.03  8087988.43  49420.00  1190404.50  4744178.50  11275489.50  45777509.00
+Estimated Labour Participation Rate (%)  740.0       42.63        8.11     13.33       38.06       41.16        45.50        72.57
+
+Date diagnostics:
+  Raw example values: [' 31-05-2019', ' 30-06-2019', ' 31-07-2019']
+  Leading/trailing whitespace cells in Date: 740
+  Blank date cells: 28
+  Non-blank dates unparseable with dd-mm-yyyy: 0
+  Fallback parse with dayfirst=True yields the same non-null count: True
+  Parsed range: 2019-05-31 to 2020-06-30
+  Distinct months: 14
+  Observations per month:
+    2019-05: 54
+    2019-06: 54
+    2019-07: 54
+    2019-08: 53
+    2019-09: 52
+    2019-10: 55
+    2019-11: 55
+    2019-12: 53
+    2020-01: 53
+    2020-02: 53
+    2020-03: 52
+    2020-04: 51
+    2020-05: 51
+    2020-06: 50
+
+Text-value diagnostics:
+  'Region': 28 unique values; 0 cells have irregular whitespace
+    Values: ['Andhra Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu & Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra', 'Meghalaya', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal']
+  'Date': 14 unique values; 740 cells have irregular whitespace
+    Values: [' 29-02-2020', ' 30-04-2020', ' 30-06-2019', ' 30-06-2020', ' 30-09-2019', ' 30-11-2019', ' 31-01-2020', ' 31-03-2020', ' 31-05-2019', ' 31-05-2020', ' 31-07-2019', ' 31-08-2019', ' 31-10-2019', ' 31-12-2019']
+  'Frequency': 2 unique values; 359 cells have irregular whitespace
+    Values: [' Monthly', 'Monthly']
+  'Area': 2 unique values; 0 cells have irregular whitespace
+    Values: ['Rural', 'Urban']
+
+Categorical overview:
+  Frequency values: {'Monthly': 740, <NA>: 28}
+  Area values: {'Urban': 381, 'Rural': 359, <NA>: 28}
+  Number of regions: 28
+  Regions: ['Andhra Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu & Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra', 'Meghalaya', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal']
+  Note: Frequency text is 'Monthly'; Area is Rural/Urban.
+
+============================================================================================
+DATASET 2: Unemployment_Rate_upto_11_2020.csv (supplementary)
+============================================================================================
+Shape: 267 rows x 9 columns
+Column names as stored in the CSV (repr highlights whitespace):
+  - 'Region'
+  - ' Date'
+  - ' Frequency'
+  - ' Estimated Unemployment Rate (%)'
+  - ' Estimated Employed'
+  - ' Estimated Labour Participation Rate (%)'
+  - 'Region.1'
+  - 'longitude'
+  - 'latitude'
+
+Data types:
+Region                                         str
+Date                                           str
+Frequency                                      str
+Estimated Unemployment Rate (%)            float64
+Estimated Employed                           int64
+Estimated Labour Participation Rate (%)    float64
+Region.1                                       str
+longitude                                  float64
+latitude                                   float64
+
+First five rows (headers normalised for display):
+        Region        Date Frequency  Estimated Unemployment Rate (%)  Estimated Employed  Estimated Labour Participation Rate (%) Region.1  longitude  latitude
+Andhra Pradesh  31-01-2020         M                             5.48            16635535                                    41.02    South    15.9129     79.74
+Andhra Pradesh  29-02-2020         M                             5.83            16545652                                    40.90    South    15.9129     79.74
+Andhra Pradesh  31-03-2020         M                             5.79            15881197                                    39.18    South    15.9129     79.74
+Andhra Pradesh  30-04-2020         M                            20.51            11336911                                    33.10    South    15.9129     79.74
+Andhra Pradesh  31-05-2020         M                            17.43            12988845                                    36.46    South    15.9129     79.74
+
+Last five rows:
+     Region        Date Frequency  Estimated Unemployment Rate (%)  Estimated Employed  Estimated Labour Participation Rate (%) Region.1  longitude  latitude
+West Bengal  30-06-2020         M                             7.29            30726310                                    40.39     East    22.9868    87.855
+West Bengal  31-07-2020         M                             6.83            35372506                                    46.17     East    22.9868    87.855
+West Bengal  31-08-2020         M                            14.87            33298644                                    47.48     East    22.9868    87.855
+West Bengal  30-09-2020         M                             9.35            35707239                                    47.73     East    22.9868    87.855
+West Bengal  31-10-2020         M                             9.98            33962549                                    45.63     East    22.9868    87.855
+
+Missing values by column:
+                                         missing_count  missing_percent
+Region                                               0              0.0
+Date                                                 0              0.0
+Frequency                                            0              0.0
+Estimated Unemployment Rate (%)                      0              0.0
+Estimated Employed                                   0              0.0
+Estimated Labour Participation Rate (%)              0              0.0
+Region.1                                             0              0.0
+longitude                                            0              0.0
+latitude                                             0              0.0
+Rows that are completely empty: 0
+Exact duplicate rows (including empty rows): 0
+Exact duplicate rows after removing completely empty rows: 0
+
+Statistical summary of numeric columns:
+                                         count         mean          std        min         25%         50%          75%          max
+Estimated Unemployment Rate (%)          267.0        12.24        10.80       0.50        4.84        9.65        16.76        75.85
+Estimated Employed                       267.0  13962105.72  13366318.36  117542.00  2838930.50  9732417.00  21878686.00  59433759.00
+Estimated Labour Participation Rate (%)  267.0        41.68         7.85      16.77       37.26       40.39        44.06        69.69
+longitude                                267.0        22.83         6.27      10.85       18.11       23.61        27.28        33.78
+latitude                                 267.0        80.53         5.83      71.19       76.09       79.02        85.28        92.94
+
+Date diagnostics:
+  Raw example values: [' 31-01-2020', ' 29-02-2020', ' 31-03-2020']
+  Leading/trailing whitespace cells in Date: 267
+  Blank date cells: 0
+  Non-blank dates unparseable with dd-mm-yyyy: 0
+  Fallback parse with dayfirst=True yields the same non-null count: True
+  Parsed range: 2020-01-31 to 2020-10-31
+  Distinct months: 10
+  Observations per month:
+    2020-01: 26
+    2020-02: 26
+    2020-03: 27
+    2020-04: 26
+    2020-05: 27
+    2020-06: 27
+    2020-07: 27
+    2020-08: 27
+    2020-09: 27
+    2020-10: 27
+
+Text-value diagnostics:
+  'Region': 27 unique values; 0 cells have irregular whitespace
+    Values: ['Andhra Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu & Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra', 'Meghalaya', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal']
+  'Date': 10 unique values; 267 cells have irregular whitespace
+    Values: [' 29-02-2020', ' 30-04-2020', ' 30-06-2020', ' 30-09-2020', ' 31-01-2020', ' 31-03-2020', ' 31-05-2020', ' 31-07-2020', ' 31-08-2020', ' 31-10-2020']
+  'Frequency': 1 unique values; 267 cells have irregular whitespace
+    Values: [' M']
+  'Region.1': 5 unique values; 0 cells have irregular whitespace
+    Values: ['East', 'North', 'Northeast', 'South', 'West']
+
+Categorical overview:
+  Frequency values: {'M': 267}
+  Number of regions: 27
+  Regions: ['Andhra Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu & Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra', 'Meghalaya', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal']
+  Note: Frequency is abbreviated 'M'; there is no Area column. The filename suggests November 2020, but the file ends on 31-10-2020.
+
+============================================================================================
+SCHEMA AND MEANING COMPARISON
+============================================================================================
+Common columns (after stripping names): ['Date', 'Estimated Employed', 'Estimated Labour Participation Rate (%)', 'Estimated Unemployment Rate (%)', 'Frequency', 'Region']
+Only in Dataset 1: ['Area']
+Only in Dataset 2: ['Region.1', 'latitude', 'longitude']
+Common regions: 27
+Only in Dataset 1: ['Chandigarh']
+Only in Dataset 2: []
+Dataset 1 date range: 2019-05-31 to 2020-06-30
+Dataset 2 date range: 2020-01-31 to 2020-10-31
+Overlapping months: ['2020-01', '2020-02', '2020-03', '2020-04', '2020-05', '2020-06']
+Dataset 1 has two rows per region-month: Rural and Urban.
+Dataset 2 has one row per region-month and no Rural/Urban column.
+Dataset 2 adds a geographic zone, longitude and latitude; Dataset 1 does not.
+The datasets therefore describe related but not identical populations. They
+must not be concatenated or duplicated into a single count series. Dataset 1
+is the primary source for area-level analysis; Dataset 2 is supplementary
+for the longer Jan-Oct 2020 recovery window and geographic zones.
+
+Dataset 2's filename says 'upto_11_2020', but the latest observation is
+2020-10-31. The actual date range is used everywhere.

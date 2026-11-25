@@ -1,0 +1,348 @@
+{
+  "dataset1": {
+    "dataset": "DATASET 1: Unemployment in India.csv (primary)",
+    "shape": {
+      "rows": 768,
+      "columns": 7
+    },
+    "columns_raw": [
+      "Region",
+      " Date",
+      " Frequency",
+      " Estimated Unemployment Rate (%)",
+      " Estimated Employed",
+      " Estimated Labour Participation Rate (%)",
+      "Area"
+    ],
+    "columns_have_leading_or_trailing_spaces": [
+      " Date",
+      " Frequency",
+      " Estimated Unemployment Rate (%)",
+      " Estimated Employed",
+      " Estimated Labour Participation Rate (%)"
+    ],
+    "dtypes": {
+      "Region": "str",
+      "Date": "str",
+      "Frequency": "str",
+      "Estimated Unemployment Rate (%)": "float64",
+      "Estimated Employed": "float64",
+      "Estimated Labour Participation Rate (%)": "float64",
+      "Area": "str"
+    },
+    "missing_by_column": {
+      "Region": 28,
+      "Date": 28,
+      "Frequency": 28,
+      "Estimated Unemployment Rate (%)": 28,
+      "Estimated Employed": 28,
+      "Estimated Labour Participation Rate (%)": 28,
+      "Area": 28
+    },
+    "completely_empty_rows": 28,
+    "duplicate_rows_total": 27,
+    "duplicate_rows_after_empty_removed": 0,
+    "date_range": [
+      "2019-05-31",
+      "2020-06-30"
+    ],
+    "distinct_months": 14,
+    "observations_per_month": {
+      "2019-05": 54,
+      "2019-06": 54,
+      "2019-07": 54,
+      "2019-08": 53,
+      "2019-09": 52,
+      "2019-10": 55,
+      "2019-11": 55,
+      "2019-12": 53,
+      "2020-01": 53,
+      "2020-02": 53,
+      "2020-03": 52,
+      "2020-04": 51,
+      "2020-05": 51,
+      "2020-06": 50
+    },
+    "date_parse_failures": 0,
+    "blank_date_cells": 28,
+    "region_count": 28,
+    "regions": [
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Chandigarh",
+      "Chhattisgarh",
+      "Delhi",
+      "Goa",
+      "Gujarat",
+      "Haryana",
+      "Himachal Pradesh",
+      "Jammu & Kashmir",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Meghalaya",
+      "Odisha",
+      "Puducherry",
+      "Punjab",
+      "Rajasthan",
+      "Sikkim",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "frequency_values": {
+      "Monthly": 740,
+      "<NA>": 28
+    },
+    "area_values": {
+      "Urban": 381,
+      "Rural": 359,
+      "<NA>": 28
+    },
+    "irregular_whitespace_cells": {
+      "Region": 0,
+      "Date": 740,
+      "Frequency": 359,
+      "Area": 0
+    },
+    "numeric_summary": {
+      "Estimated Unemployment Rate (%)": {
+        "count": 740,
+        "mean": 11.787945945945946,
+        "std": 10.721298373157788,
+        "min": 0.0,
+        "p25": 4.657500000000001,
+        "median": 8.35,
+        "p75": 15.887500000000001,
+        "max": 76.74
+      },
+      "Estimated Employed": {
+        "count": 740,
+        "mean": 7204460.025675676,
+        "std": 8087988.429457784,
+        "min": 49420.0,
+        "p25": 1190404.5,
+        "median": 4744178.5,
+        "p75": 11275489.5,
+        "max": 45777509.0
+      },
+      "Estimated Labour Participation Rate (%)": {
+        "count": 740,
+        "mean": 42.630121621621626,
+        "std": 8.111094365865874,
+        "min": 13.33,
+        "p25": 38.0625,
+        "median": 41.16,
+        "p75": 45.505,
+        "max": 72.57
+      }
+    }
+  },
+  "dataset2": {
+    "dataset": "DATASET 2: Unemployment_Rate_upto_11_2020.csv (supplementary)",
+    "shape": {
+      "rows": 267,
+      "columns": 9
+    },
+    "columns_raw": [
+      "Region",
+      " Date",
+      " Frequency",
+      " Estimated Unemployment Rate (%)",
+      " Estimated Employed",
+      " Estimated Labour Participation Rate (%)",
+      "Region.1",
+      "longitude",
+      "latitude"
+    ],
+    "columns_have_leading_or_trailing_spaces": [
+      " Date",
+      " Frequency",
+      " Estimated Unemployment Rate (%)",
+      " Estimated Employed",
+      " Estimated Labour Participation Rate (%)"
+    ],
+    "dtypes": {
+      "Region": "str",
+      "Date": "str",
+      "Frequency": "str",
+      "Estimated Unemployment Rate (%)": "float64",
+      "Estimated Employed": "int64",
+      "Estimated Labour Participation Rate (%)": "float64",
+      "Region.1": "str",
+      "longitude": "float64",
+      "latitude": "float64"
+    },
+    "missing_by_column": {
+      "Region": 0,
+      "Date": 0,
+      "Frequency": 0,
+      "Estimated Unemployment Rate (%)": 0,
+      "Estimated Employed": 0,
+      "Estimated Labour Participation Rate (%)": 0,
+      "Region.1": 0,
+      "longitude": 0,
+      "latitude": 0
+    },
+    "completely_empty_rows": 0,
+    "duplicate_rows_total": 0,
+    "duplicate_rows_after_empty_removed": 0,
+    "date_range": [
+      "2020-01-31",
+      "2020-10-31"
+    ],
+    "distinct_months": 10,
+    "observations_per_month": {
+      "2020-01": 26,
+      "2020-02": 26,
+      "2020-03": 27,
+      "2020-04": 26,
+      "2020-05": 27,
+      "2020-06": 27,
+      "2020-07": 27,
+      "2020-08": 27,
+      "2020-09": 27,
+      "2020-10": 27
+    },
+    "date_parse_failures": 0,
+    "blank_date_cells": 0,
+    "region_count": 27,
+    "regions": [
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Chhattisgarh",
+      "Delhi",
+      "Goa",
+      "Gujarat",
+      "Haryana",
+      "Himachal Pradesh",
+      "Jammu & Kashmir",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Meghalaya",
+      "Odisha",
+      "Puducherry",
+      "Punjab",
+      "Rajasthan",
+      "Sikkim",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "frequency_values": {
+      "M": 267
+    },
+    "area_values": {},
+    "irregular_whitespace_cells": {
+      "Region": 0,
+      "Date": 267,
+      "Frequency": 267,
+      "Region.1": 0
+    },
+    "numeric_summary": {
+      "Estimated Unemployment Rate (%)": {
+        "count": 267,
+        "mean": 12.236928838951311,
+        "std": 10.803283384503736,
+        "min": 0.5,
+        "p25": 4.845,
+        "median": 9.65,
+        "p75": 16.755,
+        "max": 75.85
+      },
+      "Estimated Employed": {
+        "count": 267,
+        "mean": 13962105.722846443,
+        "std": 13366318.359732695,
+        "min": 117542.0,
+        "p25": 2838930.5,
+        "median": 9732417.0,
+        "p75": 21878686.0,
+        "max": 59433759.0
+      },
+      "Estimated Labour Participation Rate (%)": {
+        "count": 267,
+        "mean": 41.68157303370787,
+        "std": 7.845419462260699,
+        "min": 16.77,
+        "p25": 37.265,
+        "median": 40.39,
+        "p75": 44.055,
+        "max": 69.69
+      },
+      "longitude": {
+        "count": 267,
+        "mean": 22.826047940074908,
+        "std": 6.27073080098084,
+        "min": 10.8505,
+        "p25": 18.1124,
+        "median": 23.6102,
+        "p75": 27.2784,
+        "max": 33.7782
+      },
+      "latitude": {
+        "count": 267,
+        "mean": 80.53242471910112,
+        "std": 5.831737701769845,
+        "min": 71.1924,
+        "p25": 76.0856,
+        "median": 79.0193,
+        "p75": 85.2799,
+        "max": 92.9376
+      }
+    }
+  },
+  "schema_comparison": {
+    "common_columns": [
+      "Date",
+      "Estimated Employed",
+      "Estimated Labour Participation Rate (%)",
+      "Estimated Unemployment Rate (%)",
+      "Frequency",
+      "Region"
+    ],
+    "only_dataset1": [
+      "Area"
+    ],
+    "only_dataset2": [
+      "Region.1",
+      "latitude",
+      "longitude"
+    ],
+    "common_regions_count": 27,
+    "regions_only_dataset1": [
+      "Chandigarh"
+    ],
+    "regions_only_dataset2": [],
+    "overlapping_months": [
+      "2020-01",
+      "2020-02",
+      "2020-03",
+      "2020-04",
+      "2020-05",
+      "2020-06"
+    ],
+    "dataset1_date_range": [
+      "2019-05-31",
+      "2020-06-30"
+    ],
+    "dataset2_date_range": [
+      "2020-01-31",
+      "2020-10-31"
+    ],
+    "combination_decision": "Do not concatenate. Dataset 1 supports Rural/Urban analysis; Dataset 2 supports a longer 2020 recovery window and geographic zones. Use Dataset 1 as primary and Dataset 2 as supplementary, with explicit schema notes."
+  }
+}

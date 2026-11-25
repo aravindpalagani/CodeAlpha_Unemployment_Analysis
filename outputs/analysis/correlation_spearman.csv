@@ -1,0 +1,4 @@
+,unemployment_rate,estimated_employed,labour_participation_rate
+unemployment_rate,1.0,-0.2166,-0.0236
+estimated_employed,-0.2166,1.0,0.0494
+labour_participation_rate,-0.0236,0.0494,1.0

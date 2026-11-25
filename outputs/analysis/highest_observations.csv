@@ -1,0 +1,16 @@
+region,date,area,unemployment_rate,estimated_employed,labour_participation_rate
+Puducherry,2020-04-30,Urban,76.74,68122.0,35.54
+Puducherry,2020-05-31,Urban,75.0,64538.0,31.25
+Puducherry,2020-04-30,Rural,74.51,49420.0,46.79
+Jharkhand,2020-05-31,Urban,70.17,830347.0,40.49
+Jharkhand,2020-04-30,Urban,61.48,1054829.0,39.92
+Bihar,2020-04-30,Urban,58.77,1400962.0,34.94
+Jharkhand,2020-05-31,Rural,55.1,3315038.0,37.03
+Tamil Nadu,2020-04-30,Rural,53.19,5086200.0,33.05
+Himachal Pradesh,2020-05-31,Urban,50.0,134868.0,43.55
+Bihar,2020-05-31,Rural,47.26,14050319.0,38.5
+Haryana,2020-04-30,Urban,46.89,1606580.0,35.48
+Delhi,2020-05-31,Urban,45.78,2343783.0,28.28
+Tamil Nadu,2020-04-30,Urban,45.55,4632967.0,26.17
+Bihar,2020-04-30,Rural,45.09,14645275.0,38.63
+Tripura,2020-04-30,Rural,43.64,675083.0,52.63
